@@ -1,0 +1,26 @@
+<ul class="menu bg-base-200 rounded-box w-56">
+  <li class="text-base font-bold">Categories</li>
+  <li><a>All categories</a></li>
+  <li>
+    <a>{{ page }}</a>
+    <ul *ngFor="let category of cat">
+      <li>
+        <a>{{ category }}</a>
+      </li>
+    </ul>
+  </li>
+  <li class="text-base font-bold">Location</li>
+  <li>
+    <select class="select">
+      <option disabled selected>Pakistan</option>
+      <option>Lahore</option>
+      <option>Karachi</option>
+      <option>Islamabad</option>
+      <option>Faisalabad</option>
+      <option>Multan</option>
+      <option>Hyderabad</option>
+      <option>Rawalpindi</option>
+      <option>Gujranwala</option>
+    </select>
+  </li>
+</ul>

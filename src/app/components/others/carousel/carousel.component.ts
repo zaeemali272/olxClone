@@ -14,7 +14,11 @@ export class CarouselComponent {
     },
     {
       previewImageSrc:
-        'https://www.tofusecret.com/wp-content/uploads/2020/07/NatureRepublic.png',
+        'https://images.olx.com.pk/thumbnails/527654309-800x600.webp',
     },
+    // {
+    //   previewImageSrc:
+    //     'https://www.tofusecret.com/wp-content/uploads/2020/07/NatureRepublic.png',
+    // },
   ];
 }

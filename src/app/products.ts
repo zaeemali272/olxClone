@@ -1,0 +1,173 @@
+export class products {
+  mobiles = [
+    {
+      id: 1,
+      name: 'iPhone 14',
+      price: 999,
+      brand: 'Apple',
+      image: 'https://images.olx.com.pk/thumbnails/529914997-800x600.webp',
+      location: 'New York',
+      description: 'Latest iPhone model with A15 chip and 5G support.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 2,
+      name: 'Samsung Galaxy S21',
+      price: 799,
+      brand: 'Samsung',
+      image: 'https://images.olx.com.pk/thumbnails/533889313-800x600.webp',
+      location: 'Los Angeles',
+      description: 'High-end smartphone with excellent camera and performance.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 3,
+      name: 'Google Pixel 6',
+      price: 699,
+      brand: 'Google',
+      image: 'https://images.olx.com.pk/thumbnails/533912220-800x600.webp',
+      location: 'Chicago',
+      description: 'Smartphone with stock Android experience and great camera.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 4,
+      name: 'OnePlus 9',
+      price: 649,
+      brand: 'OnePlus',
+      image: 'https://images.olx.com.pk/thumbnails/533893577-800x600.webp',
+      location: 'Houston',
+      description:
+        'Flagship smartphone with fast charging and smooth performance.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 5,
+      name: 'Xiaomi Mi 11',
+      price: 599,
+      brand: 'Xiaomi',
+      image: 'https://images.olx.com.pk/thumbnails/533887476-800x600.webp',
+      location: 'Phoenix',
+      description: 'Affordable flagship with great performance and camera.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 6,
+      name: 'Sony Xperia 1 III',
+      price: 1299,
+      brand: 'Sony',
+      image: 'https://images.olx.com.pk/thumbnails/522528150-800x600.webp',
+      location: 'Philadelphia',
+      description:
+        'Premium smartphone with 4K display and advanced camera features.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 7,
+      name: 'Nokia G50',
+      price: 299,
+      brand: 'Nokia',
+      image:
+        'https://www.notebookcheck.net/fileadmin/_processed_/5/3/csm_4_zu_3_Nokia_G50_ffb64d053d.jpg',
+      location: 'San Antonio',
+      description: 'Budget smartphone with good battery life and performance.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+    {
+      id: 8,
+      name: 'Motorola Edge 20',
+      price: 499,
+      brand: 'Motorola',
+      image: 'https://images.olx.com.pk/thumbnails/533150149-800x600.webp',
+      location: 'San Diego',
+      description: 'Mid-range smartphone with good performance and camera.',
+      condition: 'New',
+      category: 'Smartphones',
+    },
+  ];
+  bikes = [
+    {
+      id: 1,
+      name: 'Yamaha YZF-R3',
+      price: 4999,
+      brand: 'Yamaha',
+      image: 'https://images.olx.com.pk/thumbnails/532291800-800x600.webp',
+      location: 'New York',
+      description:
+        'Sportbike with a powerful engine and agile handling for thrilling rides.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+    {
+      id: 2,
+      name: 'Kawasaki Ninja 400',
+      price: 5999,
+      brand: 'Kawasaki',
+      image: 'https://images.olx.com.pk/thumbnails/531244582-800x600.webp',
+      location: 'Los Angeles',
+      description:
+        'Lightweight sportbike with impressive performance and style.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+    {
+      id: 3,
+      name: 'Honda CB500F',
+      price: 6999,
+      brand: 'Honda',
+      image:
+        'https://on-track.in/wp-content/uploads/2022/11/Honda-CB500F-1024x681.jpg',
+      location: 'Chicago',
+      description:
+        'Naked bike with a comfortable riding position and versatile performance.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+    {
+      id: 4,
+      name: 'Ducati Monster 821',
+      price: 8999,
+      brand: 'Ducati',
+      image:
+        'https://www.cnet.com/a/img/resize/912d1a95a3d6059332a0635bc2222c6e17d17c2b/hub/2020/11/23/80e8a9e4-aa39-4158-8c03-d36739a21a4a/ducati-monster-821-stealth-037.jpg?auto=webp&width=1200',
+      location: 'Houston',
+      description:
+        'Iconic naked bike with a powerful engine and aggressive styling.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+    {
+      id: 5,
+      name: 'BMW R1250GS',
+      price: 15999,
+      brand: 'BMW',
+      image:
+        'https://media.zigcdn.com/media/content/2018/Sep/p90322917_highres_bmw-r-1250-gs-hp-09-.jpg',
+      location: 'Phoenix',
+      description:
+        'Adventure touring bike with advanced technology and long-distance comfort.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+    {
+      id: 6,
+      name: 'Harley-Davidson Street 750',
+      price: 7999,
+      brand: 'Harley-Davidson',
+      image:
+        'https://s1.cdn.autoevolution.com/images/moto_gallery/HARLEY-DAVIDSON-Street-750-7172_3.jpg',
+      location: 'Philadelphia',
+      description:
+        'Cruiser motorcycle with a classic design and comfortable riding position.',
+      condition: 'New',
+      category: 'Motorcycles',
+    },
+  ];
+}
