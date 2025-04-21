@@ -1,11 +1,11 @@
 import { products } from './../../../products';
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-card',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss',
 })
 export class CardComponent {
   products = new products();

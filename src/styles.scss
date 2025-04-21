@@ -1,2 +1,5 @@
 @use "tailwindcss";
 @plugin "daisyui";
+@theme {
+  --font-sans: InterVariable, sans-serif;
+}

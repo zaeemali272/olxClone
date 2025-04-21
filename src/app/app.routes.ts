@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CatMobileComponent } from './pages/categories/mobilePhones/mobiles.component';
 import { CatCarsComponent } from './pages/categories/cars/cars.component';
 import { HomeMainComponent } from './pages/home/main/homeMain.component';
+import { ProductComponent } from './product/product.component';
 
 export const routes: Routes = [
   {
@@ -12,7 +13,9 @@ export const routes: Routes = [
       { path: 'main', component: HomeMainComponent },
       { path: 'mobiles', component: CatMobileComponent },
       { path: 'cars', component: CatCarsComponent },
+      // { path: 'product', component: ProductComponent },
     ],
   },
+  { path: 'product/:id', component: ProductComponent },
   { path: '**', redirectTo: 'home/main', pathMatch: 'full' },
 ];
