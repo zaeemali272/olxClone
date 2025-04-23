@@ -1,4 +1,7 @@
 <app-catBreadcrumbs [page]="mobiles"></app-catBreadcrumbs>
 <span  class="text-xl font-medium">Mobile Phones in Pakistan</span>
 <span class="badge bg-base-300 mx-1 p-1">10,000+ ads</span>
-<app-side-filter [cat]="categories.mobiles" [page]="mobiles"></app-side-filter>
+<div class="flex">
+    <app-side-filter [cat]="categories.mobiles" [page]="mobiles"></app-side-filter>
+    <app-card [cat]="products" [mainCat]="Mobiles" class="flex w-full p-4 flex-wrap"></app-card>
+</div>

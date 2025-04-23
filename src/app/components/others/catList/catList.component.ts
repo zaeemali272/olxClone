@@ -9,6 +9,7 @@ import { products } from '../../../products';
   templateUrl: './catList.component.html',
 })
 export class CatListComponent {
-  products = new products();
- 
+  products = new products().all;
+  Mobiles: 'Mobiles' = 'Mobiles';
+  Bikes: 'Bikes' = 'Bikes';
 }

@@ -1,11 +1,17 @@
 export class products {
-  mobiles = [
+  all = [
     {
       id: 1,
       name: 'iPhone 14',
       price: 999,
       brand: 'Apple',
-      image: 'https://images.olx.com.pk/thumbnails/529914997-800x600.webp',
+      image: [
+        'https://images.olx.com.pk/thumbnails/529914997-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/529914998-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/529914999-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/529915000-800x600.webp',
+      ],
+      totalImages: 4,
       location: 'New York',
       description: 'Latest iPhone model with A15 chip and 5G support.',
       details:
@@ -32,18 +38,17 @@ export class products {
         'iCloud integration for seamless data backup',
         'AirDrop for easy file sharing',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-        '512GB',
-      ],
+      sizes: ['128GB', '256GB', '512GB'],
     },
     {
       id: 2,
       name: 'Samsung Galaxy S21',
       price: 799,
       brand: 'Samsung',
-      image: 'https://images.olx.com.pk/thumbnails/533889313-800x600.webp',
+      image: [
+        'https://images.olx.com.pk/thumbnails/533889313-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533889314-800x600.webp',
+      ],
       location: 'Los Angeles',
       description: 'High-end smartphone with excellent camera and performance.',
       details:
@@ -69,17 +74,18 @@ export class products {
         'Bixby voice assistant for hands-free control',
         'iCloud integration for seamless data backup',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-      ],
+      sizes: ['128GB', '256GB'],
     },
     {
       id: 3,
       name: 'Google Pixel 6',
       price: 699,
       brand: 'Google',
-      image: 'https://images.olx.com.pk/thumbnails/533912220-800x600.webp',
+      image: [
+        'https://images.olx.com.pk/thumbnails/533912220-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533912221-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533912222-800x600.webp',
+      ],
       location: 'Chicago',
       description: 'Smartphone with stock Android experience and great camera.',
       details:
@@ -104,17 +110,17 @@ export class products {
         'Titan M security chip for enhanced security',
         'Live Translate for real-time translation',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-      ],
+      sizes: ['128GB', '256GB'],
     },
     {
       id: 4,
       name: 'OnePlus 9',
       price: 649,
       brand: 'OnePlus',
-      image: 'https://images.olx.com.pk/thumbnails/533893577-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/533893577-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533893578-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533893579-800x600.webp'
+      ],
       location: 'Houston',
       description:
         'Flagship smartphone with fast charging and smooth performance.',
@@ -139,17 +145,21 @@ export class products {
         'Gaming mode for enhanced performance',
         'OnePlus Buds compatibility for seamless audio experience',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-      ],
+      sizes: ['128GB', '256GB'],
     },
     {
       id: 5,
       name: 'Xiaomi Mi 11',
       price: 599,
       brand: 'Xiaomi',
-      image: 'https://images.olx.com.pk/thumbnails/533887476-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/533887476-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887477-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887478-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887479-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887480-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887481-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533887482-800x600.webp',
+      ],
       location: 'Phoenix',
       description: 'Affordable flagship with great performance and camera.',
       details:
@@ -172,17 +182,15 @@ export class products {
         'Dual stereo speakers for immersive audio',
         'Gaming mode for enhanced performance',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-      ],
+      sizes: ['128GB', '256GB'],
     },
     {
       id: 6,
       name: 'Sony Xperia 1 III',
       price: 1299,
       brand: 'Sony',
-      image: 'https://images.olx.com.pk/thumbnails/522528150-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/522528150-800x600.webp',
+      ],
       location: 'Philadelphia',
       description:
         'Premium smartphone with 4K display and advanced camera features.',
@@ -206,10 +214,7 @@ export class products {
         'Dual stereo speakers for immersive audio',
         'Gaming mode for enhanced performance',
       ],
-      sizes: [
-        '256GB',
-        '512GB',
-      ],
+      sizes: ['256GB', '512GB'],
     },
     {
       id: 7,
@@ -217,7 +222,9 @@ export class products {
       price: 299,
       brand: 'Nokia',
       image:
-        'https://www.notebookcheck.net/fileadmin/_processed_/5/3/csm_4_zu_3_Nokia_G50_ffb64d053d.jpg',
+        ['https://www.notebookcheck.net/fileadmin/_processed_/5/3/csm_4_zu_3_Nokia_G50_ffb64d053d.jpg',
+        
+        ],
       location: 'San Antonio',
       description: 'Budget smartphone with good battery life and performance.',
       details:
@@ -239,17 +246,33 @@ export class products {
         'Fast charging support',
         'Dual stereo speakers for immersive audio',
       ],
-      sizes: [
-        '64GB',
-        '128GB',
-      ],
+      sizes: ['64GB', '128GB'],
     },
     {
       id: 8,
       name: 'Motorola Edge 20',
       price: 499,
       brand: 'Motorola',
-      image: 'https://images.olx.com.pk/thumbnails/533150149-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/533150149-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150150-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150151-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150152-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150153-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150154-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150155-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150156-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150157-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150158-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150159-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150160-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150161-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150162-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150163-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150164-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150165-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150166-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/533150167-800x600.webp',
+      ],
       location: 'San Diego',
       description: 'Mid-range smartphone with good performance and camera.',
       details:
@@ -271,19 +294,18 @@ export class products {
         'Fast charging and wireless charging support',
         'Dual stereo speakers for immersive audio',
       ],
-      sizes: [
-        '128GB',
-        '256GB',
-      ],
+      sizes: ['128GB', '256GB'],
     },
-  ];
-  bikes = [
     {
       id: 9,
       name: 'Yamaha YZF-R3',
       price: 4999,
       brand: 'Yamaha',
-      image: 'https://images.olx.com.pk/thumbnails/532291800-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/532291800-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/532291801-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/532291802-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/532291803-800x600.webp',        
+      ],
       location: 'New York',
       description:
         'Sportbike with a powerful engine and agile handling for thrilling rides.',
@@ -304,16 +326,19 @@ export class products {
         'Sporty riding position for enhanced control',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '321cc',
-      ],
+      sizes: ['321cc'],
     },
     {
       id: 10,
       name: 'Kawasaki Ninja 400',
       price: 5999,
       brand: 'Kawasaki',
-      image: 'https://images.olx.com.pk/thumbnails/531244582-800x600.webp',
+      image: ['https://images.olx.com.pk/thumbnails/531244582-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/531244583-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/531244584-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/531244585-800x600.webp',
+        'https://images.olx.com.pk/thumbnails/531244586-800x600.webp',
+      ],
       location: 'Los Angeles',
       description:
         'Lightweight sportbike with impressive performance and style.',
@@ -334,9 +359,7 @@ export class products {
         'Sporty riding position for enhanced control',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '399cc',
-      ],
+      sizes: ['399cc'],
     },
     {
       id: 11,
@@ -344,7 +367,9 @@ export class products {
       price: 6999,
       brand: 'Honda',
       image:
-        'https://on-track.in/wp-content/uploads/2022/11/Honda-CB500F-1024x681.jpg',
+        ['https://on-track.in/wp-content/uploads/2022/11/Honda-CB500F-1024x681.jpg',
+
+        ],
       location: 'Chicago',
       description:
         'Naked bike with a comfortable riding position and versatile performance.',
@@ -365,9 +390,7 @@ export class products {
         'Comfortable riding position for long-distance rides',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '471cc',
-      ],
+      sizes: ['471cc'],
     },
     {
       id: 12,
@@ -375,7 +398,7 @@ export class products {
       price: 8999,
       brand: 'Ducati',
       image:
-        'https://www.cnet.com/a/img/resize/912d1a95a3d6059332a0635bc2222c6e17d17c2b/hub/2020/11/23/80e8a9e4-aa39-4158-8c03-d36739a21a4a/ducati-monster-821-stealth-037.jpg?auto=webp&width=1200',
+        ['https://www.cnet.com/a/img/resize/912d1a95a3d6059332a0635bc2222c6e17d17c2b/hub/2020/11/23/80e8a9e4-aa39-4158-8c03-d36739a21a4a/ducati-monster-821-stealth-037.jpg?auto=webp&width=1200',],
       location: 'Houston',
       description:
         'Iconic naked bike with a powerful engine and aggressive styling.',
@@ -396,9 +419,7 @@ export class products {
         'Sporty riding position for enhanced control',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '821cc',
-      ],
+      sizes: ['821cc'],
     },
     {
       id: 13,
@@ -406,7 +427,7 @@ export class products {
       price: 15999,
       brand: 'BMW',
       image:
-        'https://media.zigcdn.com/media/content/2018/Sep/p90322917_highres_bmw-r-1250-gs-hp-09-.jpg',
+        ['https://media.zigcdn.com/media/content/2018/Sep/p90322917_highres_bmw-r-1250-gs-hp-09-.jpg',],
       location: 'Phoenix',
       description:
         'Adventure touring bike with advanced technology and long-distance comfort.',
@@ -427,9 +448,7 @@ export class products {
         'Comfortable riding position for long-distance rides',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '1254cc',
-      ],
+      sizes: ['1254cc'],
     },
     {
       id: 14,
@@ -437,7 +456,7 @@ export class products {
       price: 7999,
       brand: 'Harley-Davidson',
       image:
-        'https://s1.cdn.autoevolution.com/images/moto_gallery/HARLEY-DAVIDSON-Street-750-7172_3.jpg',
+        ['https://s1.cdn.autoevolution.com/images/moto_gallery/HARLEY-DAVIDSON-Street-750-7172_3.jpg',],
       location: 'Philadelphia',
       description:
         'Cruiser motorcycle with a classic design and comfortable riding position.',
@@ -458,9 +477,7 @@ export class products {
         'Comfortable riding position for long-distance rides',
         'Available in multiple colors and graphics options',
       ],
-      sizes: [
-        '749cc',
-      ],
+      sizes: ['749cc'],
     },
   ];
 }
