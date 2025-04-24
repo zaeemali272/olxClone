@@ -2,26 +2,27 @@
   <li>
     <details>
       <summary><b>ALL CATEGORIES</b></summary>
-      <ul class="bg-base-100 rounded-box z-1">
-        <li><a>Mobile Phones</a></li>
-        <li><a>Bikes</a></li>
-        <li><a>Watches</a></li>
-        <li>
-          <details>
-            <summary>Clothes</summary>
-            <ul>
-              <li><a>Men</a></li>
-              <li><a>Women</a></li>
-              <li><a>Boys</a></li>
-              <li><a>Girls</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+      <div *ngFor="let draw of categories.category">
+        <ul class="bg-base-100 rounded-box z-1">
+          <li>
+            <details>
+              <summary [routerLink]="['/category/', draw.mainCat]">
+                {{ draw.mainCat }}
+              </summary>
+              <ul>
+                <li>
+                  <a>{{ draw.subCat }}</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </details>
   </li>
-  <li><a href="home/mobiles">Mobile Phones</a></li>
-  <li><a>Motorcycles</a></li>
-  <li><a>Watches</a></li>
-  <li><a>Clothes</a></li>
+  <div *ngFor="let cat of categories.category">
+    <li>
+      <a [routerLink]="['/category/', cat.mainCat]">{{ cat.mainCat }}</a>
+    </li>
+  </div>
 </ul>

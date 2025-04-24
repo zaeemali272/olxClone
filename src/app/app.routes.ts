@@ -4,6 +4,7 @@ import { CatMobileComponent } from './pages/categories/mobilePhones/mobiles.comp
 import { CatCarsComponent } from './pages/categories/cars/cars.component';
 import { HomeMainComponent } from './pages/home/main/homeMain.component';
 import { ProductComponent } from './product/product.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,8 @@ export const routes: Routes = [
       // { path: 'product', component: ProductComponent },
     ],
   },
+  { path: 'cart', component: CartComponent },
   { path: 'product/:id', component: ProductComponent },
+  {path: 'category/:category', component: CatMobileComponent},
   { path: '**', redirectTo: 'home/main', pathMatch: 'full' },
 ];

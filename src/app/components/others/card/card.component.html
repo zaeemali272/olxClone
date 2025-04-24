@@ -1,29 +1,28 @@
 <div *ngFor="let product of cat">
   <div *ngIf="product.mainCategory == mainCat">
-
-  <div
-    class="card bg-base-100 max-w-120 max-h-100 shadow-sm m-4 border-1 border-gray-800 shadow-sm rounded-xl cursor-pointer hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
-  >
-    <figure>
-      <a [routerLink]="['/product/', product.id]">
-        <img
-          src="{{ product.image[0] }}"
-          class="rounded-xl h-70 w-120 object-cover"
-          alt="Shoes"
-        />
-      </a>
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">
-        {{ product.name }}
-        <div class="badge badge-secondary">{{ product.condition }}</div>
-      </h2>
-      <p>{{ product.description }}</p>
-      <div class="card-actions justify-end">
-        <div class="badge badge-outline">{{ product.location }}</div>
-        <div class="badge badge-outline">$ {{ product.price }}</div>
+    <div
+      class="card bg-base-100 w-120 h-100 shadow-md m-4 border-1 border-gray-800 rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1"
+    >
+      <figure>
+        <a [routerLink]="['/product/', product.id]">
+          <img
+            src="{{ product.image[0] }}"
+            class="rounded-xl h-60 w-120 object-cover"
+            alt="Shoes"
+          />
+        </a>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">
+          {{ product.name }}
+          <div class="badge badge-secondary">{{ product.condition }}</div>
+        </h2>
+        <p>{{ product.description }}</p>
+        <div class="card-actions justify-end">
+          <div class="badge badge-outline">{{ product.location }}</div>
+          <div class="badge badge-outline">$ {{ product.price }}</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

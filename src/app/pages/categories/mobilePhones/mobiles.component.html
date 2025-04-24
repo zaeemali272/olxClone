@@ -1,7 +1,19 @@
-<app-catBreadcrumbs [page]="mobiles"></app-catBreadcrumbs>
-<span  class="text-xl font-medium">Mobile Phones in Pakistan</span>
-<span class="badge bg-base-300 mx-1 p-1">10,000+ ads</span>
-<div class="flex">
-    <app-side-filter [cat]="categories.mobiles" [page]="mobiles"></app-side-filter>
-    <app-card [cat]="products" [mainCat]="Mobiles" class="flex w-full p-4 flex-wrap"></app-card>
+<div *ngFor="let cat of categories.category" class="pl-4">
+  <div *ngIf="category == cat.mainCat">
+    <app-catBreadcrumbs [page]="cat.mainCat"></app-catBreadcrumbs>
+    <span class="text-xl font-medium">{{ cat.mainCat }} in Pakistan</span>
+    <span class="badge bg-base-300 mx-1 p-1">10,000+ ads</span>
+    <div class="flex">
+        <app-side-filter
+        [cat]="cat.subCat"
+        [page]="category"
+        class="ml-3"
+        ></app-side-filter>
+        <app-card
+        [cat]="products"
+        [mainCat]="cat.mainCat"
+        class="flex w-full p-4 flex-wrap"
+        ></app-card>
+    </div>
+  </div>
 </div>
