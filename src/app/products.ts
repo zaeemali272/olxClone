@@ -479,5 +479,6 @@ export class products {
       ],
       sizes: ['749cc'],
     },
+    
   ];
 }

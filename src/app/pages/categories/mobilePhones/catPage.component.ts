@@ -8,11 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'cat-mobiles',
+  selector: 'cat-page',
   imports: [CatBreadcrumbsComponent, SideFilterComponent, CardComponent, CommonModule],
-  templateUrl: './mobiles.component.html',
+  templateUrl: './catPage.component.html',
 })
-export class CatMobileComponent {
+export class CatPageComponent {
   public mobiles: any = ['mobiles'];
   cat: any;
   categories = new categories();

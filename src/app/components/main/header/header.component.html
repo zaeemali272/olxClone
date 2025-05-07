@@ -35,34 +35,50 @@
             >Subtotal: ${{ totalprice + items.price }}</span
           >
           <div class="card-actions">
-            <a href="cart">
+            <a routerLink="cart/">
               <button class="btn btn-primary btn-block">View cart</button>
             </a>
           </div>
-        </div>
+        </div>null
       </div>
     </div>
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
+          @if (this.user()?.photoURL; as imgUrl ){
           <img
-            alt="PRO PIC"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            [src]="imgUrl ?? null"
+            alt="User Icon"
+            class="w-8 h-8 rounded-full"
+            (click)="this.isMenuOpen = !this.isMenuOpen"
           />
+          } @else {
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            alt="User Icon"
+            class="w-8 h-8 rounded-full"
+            (click)="this.isMenuOpen = !this.isMenuOpen"
+          />
+          }
         </div>
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+        class="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
       >
-        <li>
-          <a class="justify-between">
-            Profile
-            <span class="badge">New</span>
-          </a>
+        <li class="font-bold text-2xl">
+          <a routerLink="dashboard">{{ this.user()?.displayName }}</a>
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        @if (!this.user()?.photoURL; as imgUrl ){
+        <li>
+          <a routerLink="home/login/">Login</a>
+        </li>
+        } @if (this.user()?.photoURL; as imgUrl ){
+        <li>
+          <a (click)="logOut()">Logout</a>
+        </li>
+        }
+        <li><a>Privacy Policy</a></li>
       </ul>
     </div>
   </div>
